@@ -38,12 +38,12 @@ permissions.deleteUser(userID, guildID);
 permisions.deleteUser("390810485244821505", "653154689218641930")
 
 
-// Add a permission to a player:
+// Add a permission to a user:
 permissions.addPermission(userID, guildID, permission)
 //Example: 
 permisions.addPermission("390810485244821505", "653154689218641930", "bot.moderator")
 
-// Remove a permission from a player:
+// Remove a permission from a user:
 permissions.removePermission(userID, guildID, permission)
 //Example: 
 permisions.removePermission("390810485244821505", "653154689218641930", "bot.moderator")
@@ -54,7 +54,7 @@ permissions.hasPermission("390810485244821505", "653154689218641930", "bot.moder
 if (await permissions.hasPermission(message.author.id, message.guild.id, "bot.admin")) {
 		console.log("HE HAS THE PERMISSION!")
 	} else {
-		console.log("HE DONT HAVE THE PERMISSION!")
+		console.log("HE HASN'T THE PERMISSION!")
 }
 //PLEASE USE THIS WITH await
 
