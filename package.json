@@ -1,16 +1,24 @@
 {
-  "name": "discord-perms-master",
-  "version": "1.0.0",
-  "description": "Create and manage own permissions for discord.js! with mongodb",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Conner Bachmann (EiNSynTaX)",
-  "license": "ISC",
-  "dependencies": {
-    "mongoose": "^5.10.0"
-  },
-  "devDependencies": {},
-  "keywords": []
+	"name": "@einsyntax/discord-perms",
+	"version": "1.0.1",
+	"description": "Create and manage own permissions for discord.js! with mongodb",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Conner Bachmann (EiNSynTaX)",
+	"license": "MIT",
+	"dependencies": {
+		"mongoose": "^5.10.0"
+	},
+	"devDependencies": {},
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Intevel/discord-perms.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Intevel/discord-perms/issues"
+	},
+	"homepage": "https://github.com/Intevel/discord-perms#readme"
 }

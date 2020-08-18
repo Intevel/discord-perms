@@ -20,8 +20,6 @@ var permissions = require('discord-perms')
 
 ## Example
 
-> _All data in quick.db is stored **persistently** in a database. Here is an example of setting an object in the database, then fetching parts & the full object._
-
 ```javascript
 const permissions = require('discord-perms')
 
