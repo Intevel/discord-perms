@@ -5,7 +5,7 @@ _This package is meant to provide an easy way to create and use own discord.js p
 **Installation**
 
 ```ruby
-npm install discord-perms
+npm i @einsyntax/discord-perms
 ```
 
 **Require Package**
