@@ -1,6 +1,6 @@
 {
-	"name": "@einsyntax/discord-perms",
-	"version": "1.0.4",
+	"name": "discord-perms",
+	"version": "1.0.5",
 	"description": "Create and manage own permissions for discord.js! with mongodb",
 	"main": "index.js",
 	"scripts": {
@@ -12,7 +12,7 @@
 		"mongoose": "^5.10.0"
 	},
 	"devDependencies": {},
-	"keywords": [],
+	"keywords": ["discord", "perms", "discord-perms", "discordperms", "permissions", "discord permissions", "discord-permissions"],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Intevel/discord-perms.git"
