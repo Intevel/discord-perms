@@ -1,12 +1,12 @@
 {
-	"name": "@einsyntax/discord-perms",
+	"name": "@intevel/discord-perms",
 	"version": "1.0.7",
 	"description": "Create and manage own permissions for discord.js! with mongodb",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Conner Bachmann (EiNSynTaX)",
+	"author": "Conner Bachmann (Intevel)",
 	"license": "MIT",
 	"dependencies": {
 		"mongoose": "^5.10.0"
