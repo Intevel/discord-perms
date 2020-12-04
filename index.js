@@ -72,10 +72,10 @@ class DiscordPermissions {
 	}
 
 	/**
-	* @param {string} [userID] - Discord user id.
-	* @param {string} [guildID] - Discord guild id.
-	* @param {string} [permission] - The permission which you want add
-	*/
+	 * @param {string} [userID] - Discord user id.
+	 * @param {string} [guildID] - Discord guild id.
+	 * @param {string} [permission] - The permission which you want add
+	 */
 
 	static async addPermission(userID, guildID, permission) {
 		if (!userID) throw new TypeError("No user id was specified.");
@@ -106,24 +106,33 @@ class DiscordPermissions {
 	}
 
 	/**
-	* @param {string} [userID] - Discord user id.
-	* @param {string} [guildID] - Discord guild id.
-	* @param {string} [permission] - The permission which you want remove
-	*/
+	 * @param {string} [userID] - Discord user id.
+	 * @param {string} [guildID] - Discord guild id.
+	 * @param {string} [permission] - The permission which you want remove
+	 */
 
 	static async removePermission(userID, guildID, permission) {
 		if (!userID) throw new TypeError("No user id was specified.");
 		if (!guildID) throw new TypeError("No guild id was specified.");
 		if (!permission) throw new TypeError("No permission was specified.");
 
-		return await permDB.updateOne({ userID, guildID }, { $pull: { 'permissions': permission } }, { upsert: true }).catch(e => console.log(`${e}`));
+		return await permDB.updateOne({
+			userID,
+			guildID
+		}, {
+			$pull: {
+				'permissions': permission
+			}
+		}, {
+			upsert: true
+		}).catch(e => console.log(`${e}`));
 	}
 
 	/**
-	* @param {string} [userID] - Discord user id.
-	* @param {string} [guildID] - Discord guild id.
-	* @param {string} [permission] - The permission which you want remove
-	*/
+	 * @param {string} [userID] - Discord user id.
+	 * @param {string} [guildID] - Discord guild id.
+	 * @param {string} [permission] - The permission which you want remove
+	 */
 
 	static async hasPermission(userID, guildID, permission) {
 		if (!userID) throw new TypeError("No user id was specified.");
